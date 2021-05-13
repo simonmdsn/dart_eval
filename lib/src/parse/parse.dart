@@ -9,6 +9,7 @@ import 'package:dart_eval/src/eval/literals.dart';
 import 'package:dart_eval/src/eval/statements.dart';
 import 'package:dart_eval/src/eval/unit.dart';
 import 'package:dart_eval/src/libs/dart_core.dart';
+import 'package:front_end/src/api_unstable/vm.dart' as ge;
 
 import '../../dart_eval.dart';
 
@@ -21,9 +22,14 @@ class Parse {
     _additionalDefines.add(value);
   }
 
+  void parseUri(String content) {
+    ge.kernelForProgram(Uri.file('/Users/ethanelshyeb/Documents/flightstream/bin/flightstream.dart'), ge.CompilerOptions());
+  }
+
   /// Parse a string containing Dart code and return a [ScopeWrapper] with that code and
   /// any
   ScopeWrapper parse(String content) {
+
     final d = parseString(content: content, throwIfDiagnostics: false);
 
     if (d.errors.isNotEmpty) {

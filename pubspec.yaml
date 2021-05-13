@@ -9,6 +9,10 @@ environment:
 dependencies:
    analyzer: ^1.5.0
    pedantic: ^1.11.0
+   kernel:
+     path: ../../../dart-sdk/pkg/kernel
+   front_end:
+     path: ../../../dart-sdk/pkg/front_end
 
 dev_dependencies:
   test: ^1.14.4

@@ -24,6 +24,14 @@ void main() {
   // Setup a parser
   final parser = Parse();
 
+  parser.parseUri('''
+  void main() {
+    print('hi');
+  }
+  ''');
+
+  return;
+
   // Add our class definitions
   parser.define(EvalTimestampedTime.declaration);
   parser.define(EvalWorldTimeTracker.declaration);

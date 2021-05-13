@@ -9,6 +9,16 @@
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
+    <content url="file://$USER_HOME$/dart-sdk/pkg/front_end">
+      <excludeFolder url="file://$USER_HOME$/dart-sdk/pkg/front_end/.dart_tool" />
+      <excludeFolder url="file://$USER_HOME$/dart-sdk/pkg/front_end/.pub" />
+      <excludeFolder url="file://$USER_HOME$/dart-sdk/pkg/front_end/build" />
+    </content>
+    <content url="file://$USER_HOME$/dart-sdk/pkg/kernel">
+      <excludeFolder url="file://$USER_HOME$/dart-sdk/pkg/kernel/.dart_tool" />
+      <excludeFolder url="file://$USER_HOME$/dart-sdk/pkg/kernel/.pub" />
+      <excludeFolder url="file://$USER_HOME$/dart-sdk/pkg/kernel/build" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
