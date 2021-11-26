@@ -21,7 +21,7 @@ final dartCore = <DartDeclaration>[
                 EvalFunctionImpl(DartMethodBody(
                     callable: (s1, s2, gen, params, {EvalValue? target}) {
                   print(params[0].value.realValue);
-                  return EvalNull();
+                  return EvalString(params[0].value.realValue);
                 }), [
                   ParameterDefinition('object', EvalType.objectType, true,
                       false, false, false, null)
